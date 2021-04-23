@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_9S_dMJx6Eeufqqr1UnTsKg" name="Practica 5">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="__UuEYJx6Eeufqqr1UnTsKg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_lDKmsJx7Eeufqqr1UnTsKg" name="Practica 5">
+      <packagedElement xmi:type="uml:Class" xmi:id="_GMrlQJx8Eeufqqr1UnTsKg" name="Maquinas">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_LgGmsJx8Eeufqqr1UnTsKg" name="descripcion" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jJFqMJx8Eeufqqr1UnTsKg" name="fechaAdquisicion" visibility="private" type="_rokX8Jx8Eeufqqr1UnTsKg">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_8cLSsKQJEeu_n9HEDHPigg">
+            <body>- fechaAdqui : Practica 5::java.time.LocalDate {unique}</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Bwa_4Jx9Eeufqqr1UnTsKg" name="cost" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8MBtwJx9Eeufqqr1UnTsKg" name="MaquinaLavado">
+        <generalization xmi:type="uml:Generalization" xmi:id="_sDljIJ1EEeupMOyitZ0jnA" general="_GMrlQJx8Eeufqqr1UnTsKg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FTK4cJx-Eeufqqr1UnTsKg" name="capacidadxL" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZS9nsJx-Eeufqqr1UnTsKg" name="envasesLavadosXmin" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_3LtuIJ1EEeupMOyitZ0jnA" name="costodeLavado">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_edB0kJ1JEeupMOyitZ0jnA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_gxHbUJx-Eeufqqr1UnTsKg" name="MaquinaLlenadoyEnvasado">
+        <generalization xmi:type="uml:Generalization" xmi:id="_uYCSAJ1EEeupMOyitZ0jnA" general="_GMrlQJx8Eeufqqr1UnTsKg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_yUqxoJx-Eeufqqr1UnTsKg" name="envasesXmin" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_2AV8oJ1DEeupMOyitZ0jnA" name="listaRegulacion" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TNj6oKQcEeu_n9HEDHPigg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6CvbEJ1DEeupMOyitZ0jnA" value="*"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_jRXtUJ1JEeupMOyitZ0jnA" name="costosLlyEn">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_qG6o0J1JEeupMOyitZ0jnA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wWMn4JyAEeufqqr1UnTsKg" name="MaquinaEmpaquetado">
+        <generalization xmi:type="uml:Generalization" xmi:id="_qRlaAJ1EEeupMOyitZ0jnA" general="_GMrlQJx8Eeufqqr1UnTsKg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_-Re3AJyAEeufqqr1UnTsKg" name="tipoEmpaq" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IRfOoKQcEeu_n9HEDHPigg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ji7ygJ1EEeupMOyitZ0jnA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_EZwc0JyBEeufqqr1UnTsKg" name="empaquesxmin" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_6UY9AJ1JEeupMOyitZ0jnA" name="costoEmpaque">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_-LIlEJ1JEeupMOyitZ0jnA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_rokX8Jx8Eeufqqr1UnTsKg" name="java.time.LocalDate"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8cMg0KQJEeu_n9HEDHPigg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8cNu8KQJEeu_n9HEDHPigg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_8cQLMKQJEeu_n9HEDHPigg" base_Comment="_8cLSsKQJEeu_n9HEDHPigg" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+</xmi:XMI>
